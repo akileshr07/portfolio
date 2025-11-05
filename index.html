@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Akilesh R — Freelance Full-Stack Developer</title>
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      :root {
+        --accent: #e45c4d;
+        --bg: #ffffff;
+        --text-dark: #1f2937;
+        --text-light: #4b5563;
+        --muted: #9ca3af;
+        --radius: 16px;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: var(--bg);
+        color: var(--text-dark);
+        line-height: 1.6;
+        overflow-x: hidden;
+      }
+
+      /* === HERO / ABOUT SECTION === */
+      .hero {
+        text-align: center;
+        padding: 70px 20px 40px;
+        background: #fff;
+      }
+
+      .hero img {
+        width: 130px;
+        height: 130px;
+        border-radius: 50%;
+        object-fit: cover;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+        margin-bottom: 1.2rem;
+      }
+
+      .hero h1 {
+        font-family: "Playfair Display", serif;
+        font-size: 2.4rem;
+        margin-bottom: 0.4rem;
+      }
+
+      .hero h1 span {
+        font-size: 2.5rem;
+        color: var(--accent);
+      }
+
+      .tagline {
+        font-family: "Playfair Display", serif;
+        font-size: 1.6rem;
+        color: #222;
+        margin-bottom: 1rem;
+      }
+
+      .hero p {
+        max-width: 700px;
+        margin: 0.5rem auto 1.5rem;
+        color: #444;
+        font-size: 1.05rem;
+      }
+
+      .hero .btn {
+        display: inline-block;
+        padding: 14px 28px;
+        border-radius: 50px;
+        font-weight: 600;
+        text-decoration: none;
+        margin: 10px;
+        font-size: 1rem;
+        transition: all 0.25s ease;
+      }
+
+      .btn-primary {
+        background-color: #111;
+        color: #fff;
+      }
+      .btn-primary:hover {
+        opacity: 0.85;
+      }
+
+      .btn-secondary {
+        border: 2px solid #111;
+        color: #111;
+        background: #fff;
+      }
+      .btn-secondary:hover {
+        background: #111;
+        color: #fff;
+      }
+
+      /* === PROJECTS SECTION === */
+      .projects {
+        max-width: 1100px;
+        margin: 10px auto 0;
+        padding: 0 24px 60px;
+      }
+
+      .projects h2 {
+        font-family: "Playfair Display", serif;
+        font-size: 1.9rem;
+        margin-bottom: 28px;
+        color: var(--text-dark);
+        text-align: center;
+      }
+
+      .project-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 28px;
+      }
+
+      .project {
+        position: relative;
+        overflow: hidden;
+        border-radius: var(--radius);
+        background-color: #fff;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .project:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+      }
+
+      .project img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+        border-bottom: 2px solid #f3f4f6;
+      }
+
+      .project .info {
+        padding: 18px 20px;
+      }
+
+      .project h3 {
+        font-family: "Playfair Display", serif;
+        font-size: 1.3rem;
+        margin-bottom: 6px;
+        color: var(--text-dark);
+      }
+
+      .project p {
+        font-size: 0.95rem;
+        color: var(--text-light);
+        margin-bottom: 12px;
+      }
+
+      .project a {
+        font-weight: 600;
+        text-decoration: none;
+        color: var(--accent);
+      }
+
+      .project a:hover {
+        text-decoration: underline;
+      }
+
+      /* === FOOTER === */
+      footer {
+        text-align: center;
+        padding: 60px 20px;
+        background: #111;
+        color: #f9fafb;
+        font-family: "Playfair Display", serif;
+        font-size: 1.05rem;
+        letter-spacing: 0.3px;
+      }
+
+      footer span {
+        color: var(--accent);
+      }
+
+      /* === RESPONSIVE === */
+      @media (max-width: 768px) {
+        .hero {
+          padding: 60px 20px 40px;
+        }
+        .hero h1 {
+          font-size: 2rem;
+        }
+        .tagline {
+          font-size: 1.3rem;
+        }
+        .project img {
+          height: 180px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <img
+        src="https://i.postimg.cc/rsYDykdq/Gemini-Generated-Image-x14tmdx14tmdx14t.png"
+        alt="Akilesh Profile"
+      />
+
+      <h1>Hola! 👋 I’m <span>Akilesh</span></h1>
+      <div class="tagline">Turning ideas into Products 🚀 is my calling.</div>
+
+      <p>
+        I’m a Software Developer & Freelancer, crafting web apps, automations,
+        and backends that just work — clean, fast, and reliable.
+      </p>
+
+      <a
+        href="https://forms.gle/dH4MoLCmkfU3fAPn8"
+        target="_blank"
+        class="btn btn-secondary"
+        >Book a Free Call 📞</a
+      >
+      <a
+        href="https://mail.google.com/mail/?view=cm&fs=1&to=akileshr.official@gmail.com&su=Freelance%20Inquiry&body=Hey%20Akilesh%2C%0AI%27m%20interested%20in%20working%20with%20you%20on%20a%20project!"
+        target="_blank"
+        class="btn btn-secondary"
+        >Quick Chat 💬</a
+      >
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="projects">
+      <h2>Things I’ve Built</h2>
+      <div class="project-grid">
+        <div class="project">
+          <img
+            src="https://i.postimg.cc/VLFyPp1C/FEEDV.png"
+            alt="Feedback Collector"
+          />
+          <div class="info">
+            <h3>Product Feedback Collector</h3>
+            <p>
+              Collect customer reviews and insights with an intuitive feedback
+              dashboard.
+            </p>
+            <a
+              href="https://feedback-collector-akileshr.netlify.app/"
+              target="_blank"
+              >Live Link →</a
+            >
+          </div>
+        </div>
+
+        <div class="project">
+          <img
+            src="https://i.postimg.cc/gJwdYD4z/COMPLAINT.png"
+            alt="Student Feedback Platform"
+          />
+          <div class="info">
+            <h3>Student Feedback Platform</h3>
+            <p>
+              A simple yet powerful tool to gather and analyze student feedback
+              efficiently.
+            </p>
+            <a href="https://psnavoice.netlify.app/" target="_blank"
+              >Live Link →</a
+            >
+          </div>
+        </div>
+
+        <div class="project">
+          <img
+            src="https://i.postimg.cc/zX8M77WY/VPTS.png"
+            alt="Vehicle Parking Token System"
+          />
+          <div class="info">
+            <h3>Vehicle Parking Token System</h3>
+            <p>
+              Automated token management for vehicle entry and exit — admin &
+              user flow.
+            </p>
+            <a
+              href="https://vehicleparkingtokensystem-akileshr.netlify.app/"
+              target="_blank"
+              >Live Link →</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      Let’s build something extraordinary together ✨<br />
+      <span>Available for freelance projects worldwide 🌍</span>
+    </footer>
+  </body>
+</html>
