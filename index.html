@@ -12,7 +12,7 @@
     />
     <script src="https://unpkg.com/lucide@latest"></script>
 
-     <!-- Google tag (gtag.js) -->
+    <!-- Google tag (gtag.js) -->
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-6BNYF8HFES"
@@ -25,7 +25,7 @@
       gtag("js", new Date());
       gtag("config", "G-6BNYF8HFES");
     </script>
-    
+
     <!-- Styles -->
     <style>
       :root {
@@ -241,8 +241,7 @@
         I don’t focus on fancy designs — I focus on things that work.<br />
         Give me a task, and I’ll build, fix, or automate it till it runs
         smooth.<br />
-        From backend logic to API connections, I get it done — clean and
-        fast.<br />
+        From backend logic to API connections, I get it done — clean and fast.<br />
         If you’re stuck, I’ll be the dev who helps you ship it right.
       </p>
 
@@ -251,6 +250,7 @@
           href="https://forms.gle/dH4MoLCmkfU3fAPn8"
           target="_blank"
           class="btn btn-primary"
+          onclick="gtag('event', 'call_click', { event_category: 'engagement', event_label: 'Book a Free Call Button' });"
         >
           <i data-lucide="phone-call"></i> Book a Free Call
         </a>
@@ -258,6 +258,7 @@
           href="https://mail.google.com/mail/?view=cm&fs=1&to=akileshr.official@gmail.com&su=Freelance%20Inquiry&body=Hey%20Akilesh%2C%0AI%27m%20interested%20in%20working%20with%20you%20on%20a%20project!"
           target="_blank"
           class="btn btn-secondary"
+          onclick="gtag('event', 'chat_click', { event_category: 'engagement', event_label: 'Quick Chat Gmail Button' });"
         >
           <i data-lucide="message-circle"></i> Quick Chat
         </a>
@@ -282,6 +283,7 @@
             <a
               href="https://feedback-collector-akileshr.netlify.app/"
               target="_blank"
+              onclick="gtag('event', 'project_click', { event_category: 'projects', event_label: 'Feedback Collector Live Link' });"
               >Live Link →</a
             >
           </div>
@@ -298,7 +300,10 @@
               A simple yet powerful tool to gather and analyze student feedback
               efficiently.
             </p>
-            <a href="https://psnavoice.netlify.app/" target="_blank"
+            <a
+              href="https://psnavoice.netlify.app/"
+              target="_blank"
+              onclick="gtag('event', 'project_click', { event_category: 'projects', event_label: 'Student Feedback Live Link' });"
               >Live Link →</a
             >
           </div>
@@ -312,12 +317,12 @@
           <div class="info">
             <h3>Vehicle Parking Token System</h3>
             <p>
-              Automated token management for vehicle entry and exit — admin &
-              user flow.
+              Automated token management for vehicle entry and exit — admin & user flow.
             </p>
             <a
               href="https://vehicleparkingtokensystem-akileshr.netlify.app/"
               target="_blank"
+              onclick="gtag('event', 'project_click', { event_category: 'projects', event_label: 'Vehicle Parking Token System Live Link' });"
               >Live Link →</a
             >
           </div>
@@ -330,7 +335,8 @@
       Let’s build something extraordinary together
       <i data-lucide="sparkles"></i><br />
       <span
-        >Available for freelance projects worldwide <i data-lucide="globe"></i
+        >Available for freelance projects worldwide
+        <i data-lucide="globe"></i
       ></span>
     </footer>
 
