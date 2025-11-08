@@ -4,8 +4,11 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Akilesh R — Developer’s Project Buddy</title>
-     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6BNYF8HFES"></script>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-6BNYF8HFES"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
@@ -19,6 +22,11 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
       rel="stylesheet"
+    />
+    <!-- Devicon Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
     />
 
     <!-- Lucide Icons -->
@@ -286,6 +294,23 @@
         text-align: center;
         color: var(--muted);
       }
+      .tech-icons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        align-items: center;
+        font-size: 46px;
+      }
+
+      .tech-icons i {
+        transition: transform 0.2s ease, filter 0.2s ease;
+        cursor: pointer;
+      }
+
+      .tech-icons i:hover {
+        transform: scale(1.15);
+        filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.15));
+      }
     </style>
   </head>
 
@@ -490,7 +515,7 @@
                 "
               >
                 <li>
-                  <b>Stack:</b> ReactJS, Python (FastAPI/Django), PostgreSQL
+                  <b>Stack:</b> ReactJS, Python, PostgreSQL
                 </li>
                 <li>
                   <b>Key Features:</b> Sentiment analysis, category filters,
@@ -551,7 +576,7 @@
       </section>
 
       <!-- ABOUT -->
-      <section id="about"> 
+      <section id="about">
         <div class="wrap">
           <h2>About Me</h2>
           <p class="sub">
@@ -575,22 +600,37 @@
             </div>
 
             <div class="card">
-              <h3 style="margin-bottom: 12px">Tech Stack</h3>
-              <div class="pill-list">
-                <span class="pill"><i data-lucide="app-window"></i> React</span>
-                <span class="pill"><i data-lucide="code"></i> JavaScript</span>
-                <span class="pill"><i data-lucide="braces"></i> Java</span>
-                <span class="pill"
-                  ><i data-lucide="git-branch"></i> Spring Boot</span
-                >
-                <span class="pill"><i data-lucide="database"></i> MySQL</span>
-                <span class="pill"><i data-lucide="terminal"></i> Python</span>
-                <span class="pill"><i data-lucide="docker"></i> Docker</span>
-                <span class="pill"><i data-lucide="git"></i> Git</span>
-                <span class="pill"><i data-lucide="laptop"></i> Linux</span>
-                <span class="pill"
-                  ><i data-lucide="flask-conical"></i> Postman</span
-                >
+              <h3 style="margin-bottom: 16px">Tech Stack</h3>
+              <div class="tech-icons">
+                <i class="devicon-html5-plain colored" title="HTML5"></i>
+                <i class="devicon-css3-plain colored" title="CSS3"></i>
+                <i
+                  class="devicon-javascript-plain colored"
+                  title="JavaScript"
+                ></i>
+                <i
+                  class="devicon-tailwindcss-plain colored"
+                  title="Tailwind CSS"
+                ></i>
+                <i class="devicon-react-original colored" title="React"></i>
+                <i class="devicon-java-plain colored" title="Java"></i>
+                <i class="devicon-spring-plain colored" title="Spring Boot"></i>
+                <i
+                  class="devicon-mysql-plain-wordmark colored"
+                  title="MySQL"
+                ></i>
+                <i
+                  class="devicon-postgresql-plain-wordmark colored"
+                  title="PostgreSQL"
+                ></i>
+                <i class="devicon-python-plain colored" title="Python"></i>
+                <i
+                  class="devicon-docker-plain-wordmark colored"
+                  title="Docker"
+                ></i>
+                <i class="devicon-git-plain colored" title="Git"></i>
+                <i class="devicon-linux-plain colored" title="Linux"></i>
+                <i class="devicon-postman-plain colored" title="Postman"></i>
               </div>
             </div>
           </div>
