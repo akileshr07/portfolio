@@ -311,6 +311,39 @@
         transform: scale(1.15);
         filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.15));
       }
+      /* Mobile Nav Fix */
+      .hamburger {
+        display: none;
+        background: none;
+        border: none;
+        font-size: 28px;
+        cursor: pointer;
+      }
+
+      .mobile-nav {
+        display: none;
+        flex-direction: column;
+        padding: 20px;
+        background: white;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .mobile-nav a {
+        padding: 14px 0;
+        font-size: 18px;
+      }
+
+      @media (max-width: 768px) {
+        .desktop-nav {
+          display: none;
+        }
+        .hamburger {
+          display: block;
+        }
+        .nav {
+          padding: 12px 0;
+        }
+      }
     </style>
   </head>
 
@@ -322,7 +355,8 @@
           <span>Akilesh R</span>
         </div>
 
-        <nav class="nav-links">
+        <!-- Desktop Nav -->
+        <nav class="nav-links desktop-nav">
           <a href="#work">Work</a>
           <a href="#services">Services</a>
           <a href="#about">About</a>
@@ -330,7 +364,22 @@
             <i data-lucide="mail"></i> Contact
           </a>
         </nav>
+
+        <!-- Mobile Icon -->
+        <button class="hamburger" id="hamburgerBtn">
+          <i data-lucide="menu"></i>
+        </button>
       </div>
+
+      <!-- Mobile Menu -->
+      <nav class="mobile-nav" id="mobileNav">
+        <a href="#work">Work</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a class="btn btn-primary" href="#contact">
+          <i data-lucide="mail"></i> Contact
+        </a>
+      </nav>
     </header>
 
     <main>
@@ -352,7 +401,7 @@
             <!-- ✅ Opens Gmail directly -->
             <a
               class="btn btn-primary"
-              href="https://mail.google.com/mail/?view=cm&fs=1&to=akileshr.official@gmail.com&su=Freelance%20Project%20Inquiry&body=Hi%20Akilesh,%0A%0AI%20came%20across%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20potential%20project."
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=akileshr.official@gmail.com&su=Freelance%20Project%20Inquiry&body=Hi%20Akilesh,%0A%0AI%20came%20across%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20potential%20project.%0A%0A-%20Project%20type:%20%0A-%20Timeline:%20%0A-%20Budget:%20%0A%0AThanks,%0A"
               target="_blank"
             >
               <i data-lucide="mail"></i> Let’s Collaborate
@@ -514,9 +563,7 @@
                   font-size: 15px;
                 "
               >
-                <li>
-                  <b>Stack:</b> ReactJS, Python, PostgreSQL
-                </li>
+                <li><b>Stack:</b> ReactJS, Python, PostgreSQL</li>
                 <li>
                   <b>Key Features:</b> Sentiment analysis, category filters,
                   urgent flags
@@ -705,6 +752,17 @@
 
         window.open(gmailUrl, "_blank");
       }
+      // ✅ Mobile nav toggle
+      const hamburgerBtn = document.getElementById("hamburgerBtn");
+      const mobileNav = document.getElementById("mobileNav");
+      const icon = hamburgerBtn.querySelector("i");
+
+      hamburgerBtn.addEventListener("click", () => {
+        const isOpen = mobileNav.style.display === "flex";
+        mobileNav.style.display = isOpen ? "none" : "flex";
+        icon.setAttribute("data-lucide", isOpen ? "menu" : "x");
+        lucide.createIcons();
+      });
     </script>
   </body>
 </html>
